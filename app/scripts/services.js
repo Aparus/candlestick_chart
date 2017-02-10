@@ -14,20 +14,27 @@ angular.module('quotesApp')
                     var quote = {}
                     var quotes = []
                     quotesLines.shift()
+                    quotesLines.pop()
                     quotesLines.forEach(
                                             function(quotes_line, index){
                                                     quotes_line = quotes_line.split(";")
+                                                    //console.log(index, quotes_line)
                                                     quote = {
                                                                 "ticker": quotes_line[0], 
                                                                 "per": parseFloat(quotes_line[1]), 
-                                                                "date": parseFloat(quotes_line[2]), 
-                                                                "time": parseFloat(quotes_line[3]), 
+                                                                "yyyy": parseFloat(quotes_line[2].substr(0,4)),
+                                                                "mm": parseFloat(quotes_line[2].substr(4,2))-1,
+                                                                "dd": parseFloat(quotes_line[2].substr(6,2)),
+                                                                "hh": parseFloat(quotes_line[3].substr(0,2)),
+                                                                "mn": parseFloat(quotes_line[3].substr(2,2)),
+                                                                "ss": parseFloat(quotes_line[3].substr(4,2)),
                                                                 "open": parseFloat(quotes_line[4]), 
                                                                 "high": parseFloat(quotes_line[5]), 
                                                                 "low": parseFloat(quotes_line[6]), 
                                                                 "close": parseFloat(quotes_line[7]), 
                                                                 "vol": parseFloat(quotes_line[8])
                                                             }
+                                                    
                                                     quotes.push(quote)
                     
                                             })
