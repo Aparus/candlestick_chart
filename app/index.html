@@ -18,13 +18,18 @@
 <body>
     
 <div class="container" ng-controller="IndexController">
+        
+        <h2>Candlestick and Volume charts for Quotes.txt</h2>
+        <p>All areas of chart are zoomable. Select the area you are interested in, and you'll see it in more details. <br />
+        For reset zoom or going through zoomed area, use buttons in right top corner of Chart. </p>
 
-        <div id="chartContainer" style="width:100%;height:600px;"></div>
+        <div id="chart1CandlesStickContainer" style="width:100%;height:300px;"></div>
+        <div id="chart2VolumesContainer" style="width:100%;height:200px;"></div>
 </div>    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <script src="scripts/canvasjs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>    
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers.js"></script>
