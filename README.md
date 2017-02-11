@@ -1,3 +1,14 @@
+# Candlestick chart + Volumes chart 
+
+This app parses data from csv file quotes.txt, with USD exchange rate and volumes. 
+And display it by CanvasJS with two charts: Candlestick chart + Volumes chart. Which are separated but syncronized, 
+when you zoom in/out, or go throughout one of them. 
+
+All areas of chart are zoomable and interactive. Select the area you are interested in, and you'll see it in more details. 
+For reset zoom or going through zoomed area, use buttons in right top corner of Chart. 
+To get actual volume, multiply chart data by 10 million. 
+
+
 # Тестовое задание на позицию Front-End Developer
 
 Требуется разработать одностраничное приложение на AngularJS, которое при старте загружает приложенный файл котировок 
