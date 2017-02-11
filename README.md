@@ -8,6 +8,12 @@ All areas of chart are zoomable and interactive. Select the area you are interes
 For reset zoom or going through zoomed area, use buttons in right top corner of Chart. 
 To get actual volume, multiply chart data by 10 million. 
 
+# Screenshots 
+
+![screenshot from 2017-02-11 19-15-53](https://cloud.githubusercontent.com/assets/1222611/22855281/aa149d00-f08e-11e6-9bde-0a4f75e8f1e2.png)
+
+![screenshot from 2017-02-11 19-15-21](https://cloud.githubusercontent.com/assets/1222611/22855280/aa12104e-f08e-11e6-9158-76d8457bb8a0.png)
+
 
 # Тестовое задание на позицию Front-End Developer
 
